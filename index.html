@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: blue;
+  }
+
+  .container {
+    background-color: white; 
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+  }
+
+  .change-color-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>About me</h1>
+  <p>Hello, my name is Mohamad, and I'm 18 years old. I live in Sweden, and this is my last year of high school. I'm currently studying the Technology Program in Helsingborg, and after I finish high school, I plan to continue studying IT-related subjects in college.</p>
+  
+  <button class="change-color-btn" onclick="changeBackgroundColor()">Change Background Color</button>
+</div>
+
+<script>
+  function changeBackgroundColor() {
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
+  }
+</script>
+
+</body>
+</html>
